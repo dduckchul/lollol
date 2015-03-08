@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/pointColorDarker"
+        android:text="@string/qna_official"/>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        
+	    <ImageView android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginRight="5dp"
+	        android:contentDescription="@string/contentDesc"
+	        android:src="@drawable/ic_facebook"/>
+	    
+	    <View android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"/>
+		
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/qna_address"
+	        android:textStyle="bold"
+	        android:layout_gravity="center"
+	        android:linksClickable="true"
+	        android:autoLink="web"/>
+	    
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        
+	    <ImageView android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginRight="5dp"
+	        android:contentDescription="@string/contentDesc"
+	        android:src="@drawable/ic_twitter"/>
+	    
+	    <View android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"/>
+		
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/qna_twitter"
+	        android:textStyle="bold"
+	        android:layout_gravity="center"
+	        android:linksClickable="false"/>
+	    
+    </LinearLayout>
+    
+	<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="20sp"
+	    android:textStyle="bold"
+	    android:textColor="@color/pointColorDarker"
+	    android:text="@string/qna_about_us"/>
+	
+	<RelativeLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp">
+	    
+	    <TextView android:id="@+id/team_pk"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="5dp"
+	        android:text="@string/team_pk"
+	        android:textStyle="bold"/>
+
+	    <RelativeLayout android:id="@+id/team_profile"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/team_pk">
+	        
+	        <ImageView android:id="@+id/img_p"
+	            android:layout_width="80dp"
+	            android:layout_height="80dp"
+	            android:layout_marginBottom="10dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_alignParentTop="true"
+	            android:src="@drawable/img_p_profile"
+	            android:contentDescription="@string/contentDesc"/>
+	        
+	        <TextView android:id="@+id/name_p"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/img_p"
+	            android:layout_marginBottom="5dp"
+	            android:textStyle="bold"
+	            android:text="@string/name_p"/>
+	        
+	        <TextView android:id="@+id/desc_p"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/img_p"
+	            android:layout_below="@id/name_p"
+	            android:textSize="11sp"
+	            android:text="@string/desc_p"/>
+	        
+	        <ImageView android:id="@+id/img_k"
+	            android:layout_width="80dp"
+	            android:layout_height="80dp"
+	            android:layout_below="@+id/img_p"
+	            android:layout_marginRight="5dp"
+	            android:src="@drawable/img_k_profile"
+	            android:contentDescription="@string/contentDesc"/>
+	        
+	        <TextView android:id="@+id/name_k"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+				android:layout_marginBottom="5dp"
+	            android:layout_toRightOf="@id/img_k"
+	            android:layout_alignTop="@id/img_k"
+	            android:textStyle="bold"
+	            android:text="@string/name_k"/>
+	        
+	        <TextView android:id="@+id/desc_k"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/img_k"
+	            android:layout_below="@id/name_k"
+	            android:textSize="10sp"
+	            android:text="@string/desc_k"/>
+	        
+	    </RelativeLayout>
+	    
+	</RelativeLayout>	    
+</LinearLayout>

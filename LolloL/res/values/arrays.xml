@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="nav_drawer_items">
+		<item>검색 범위 설정</item>
+		<item>계정 정보 설정</item>
+		<item>LolloL 공유 하기</item>
+		<item>사용자 가이드</item>
+		<item>문의 / About Us</item>	    
+	</string-array>
+	
+	<array name="nav_drawer_icons">
+	    <item>@drawable/ic_drawer_search</item>
+	    <item>@drawable/ic_drawer_account_setting</item>
+	    <item>@drawable/ic_drawer_share</item>
+	    <item>@drawable/ic_drawer_guidebook</item>
+	    <item>@drawable/ic_drawer_faq</item>
+	</array>
+	
+</resources>

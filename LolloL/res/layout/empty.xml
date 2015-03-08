@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp">
+    
+    <RelativeLayout android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+    
+	    <ImageView android:id="@+id/ic_warning"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginRight="5dp"
+	        android:contentDescription="@string/contentDesc"
+	        android:src="@drawable/ic_warning"/>
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/ic_warning"
+	        android:textSize="30sp"
+	        android:textColor="@color/gray"
+	        android:textStyle="bold"
+	        android:text="@string/empty_sorry"/>
+    
+    </RelativeLayout>
+    
+    <ImageView android:id="@+id/img_sorry"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/contentDesc"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relative"
+        android:src="@drawable/img_sorry"/>
+    
+    <TextView android:id="@+id/empty_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_sorry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/gray"
+        android:textStyle="bold"/>
+    
+    <ImageButton android:id="@+id/empty_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empty_message"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/ic_btn_refresh"
+        style="?android:attr/buttonBarButtonStyle"/>
+    
+</RelativeLayout>
+        

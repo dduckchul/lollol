@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+	<RelativeLayout android:id="@+id/parentView"
+    	android:layout_width="match_parent"
+    	android:layout_height="400dp"
+    	android:gravity="center"/>
+    
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center">
+		
+		<ImageButton android:id="@+id/dislikeBtn"
+		    android:src="@drawable/ic_btn_dislike"
+		    android:contentDescription="@string/contentDesc"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    style="?android:attr/buttonBarButtonStyle"/>
+		
+		<ImageButton android:id="@+id/infoBtn"
+		    android:src="@drawable/ic_btn_info"
+		    android:contentDescription="@string/contentDesc"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@id/dislikeBtn"
+		    android:layout_centerVertical="true"
+		    style="?android:attr/buttonBarButtonStyle"/>
+		
+		<ImageButton android:id="@+id/likeBtn"
+		    android:src="@drawable/ic_btn_like"
+		    android:contentDescription="@string/contentDesc"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@id/infoBtn"
+		    android:layout_centerVertical="true"
+		    style="?android:attr/buttonBarButtonStyle"/>
+		
+	</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="app_name">LolloL</string>
+    <string name="app_version">Ver. Beta</string>
+    
+    <string name="facebook_app_id">743968215682743</string>
+    <string name="login_button_fb">페이스북으로 로그인 하기</string>
+    <string name="logout_button_fb">로그아웃 하기</string>
+    
+    <string name="team_pk">Team PK</string>
+    <string name="test">테스트 중입니다..</string>
+    <string name="error">에러..</string>
+
+    <string name="login_layout_desc">LOL 계정으로 인증하기</string>
+    <string name="login_layout_user_logininfo">LolloL은 계정 ID, PW 정보를 따로 저장하지 않습니다!</string>
+    <string name="login_info_chkbox">로그인 정보 저장</string>
+    <string name="login_failed">로그인 실패</string>
+    
+    <string name="empty_id">아이디를 입력해주세요!</string>
+    <string name="empty_pw">패스워드를 입력해주세요!</string>
+    <string name="error_membercheck">소환사 체크 에러</string>
+    
+    <string name="position_layout_desc">선호 포지션 선택</string>
+    <string name="position_layou_warning">(최대 2개)</string>
+    <string name="position_desc">선택된 포지션</string>
+    
+    <string name="signInBtn">LolloL 가입하기</string>
+    <string name="backToMainBtn">로그인 화면으로 돌아가기</string>
+    <string name="signin">LolloL 가입 처리중..</string>
+	<string name="signin_chat">채팅 서버 가입중..</string>
+	<string name="signin_failed">회원 가입 실패!</string>
+	<string name="signin_chat_failed">채팅 서버 가입 실패! 문의 부탁드립니다</string>
+	
+	<string name="introduce_input">자기 소개 입력</string>
+	<string name="introduce_input_hint">간단한 소개 (40자)</string>
+	
+    <string name="hint_InputId">ID</string>
+	<string name="hint_InputPW">PassWord</string>
+	<string name="summoner_desc">합류할 소환사명</string>
+	<string name="verify_warning">주의! 가입 후 소환사 변경이 불가능 합니다!</string>
+	
+	<string name="checkbox_top">Top</string>
+	<string name="checkbox_jungle">Jungle</string>
+	<string name="checkbox_mid">Mid</string>
+	<string name="checkbox_ad">AD</string>
+	<string name="checkbox_support">Support</string>
+	<string name="checkbox_allRounder">All</string>
+	
+	<string name="matched_header">듀오</string>
+	<string name="contentDesc">설명</string>
+	<string name="list_more_btn">듀오 리스트 더 불러오기</string>
+	
+	<string name="menu_filter">범위 설정</string>
+	<string name="applyBtn">변경</string>
+	<string name="cancelBtn">취소</string>
+	<string name="introduce_header">상세 정보</string>
+	<string name="rank_stats_txt">랭크 게임 챔피언 선택률</string>
+	
+	<string name="searchPos">검색할 포지션</string>
+	<string name="searchRange">검색할 범위 설정</string>
+	
+	<string name="removeAccountBtn">탈퇴 하기</string>
+	
+	<string name="inputTextHint">메시지를 입력하세요</string>
+	<string name="sendTextBtn">전송</string>
+	
+	<string name="toggleDesc">푸시 알림 설정</string>
+	
+	<string name="togglePushOn">On</string>
+	<string name="togglePushOff">Off</string>
+	
+	<string name="openSourceDesc">Open Source License</string>
+	
+	<string name="emptyFindMsg">조건에 해당하는 유저가 없습니다</string>
+	<string name="emptyRequestMsg">나에게 듀오 신청한 유저가 없습니다</string>
+	<string name="emptyMatchedMsg">아직 매칭된 상대방이 없습니다</string>
+	<string name="limitFindMsg">100명을 넘으면 더 추가할 수 없습니다!</string>
+	<string name="empty_sorry">SORRY ㅠㅠ</string>
+	<string name="empty_refresh">새로고침</string>
+	
+	<string name="qna_official">LolloL 공식 페이지</string>
+	<string name="qna_address"><a href="https://www.facebook.com/lollolApps/">facebook.com/lollolApps</a></string>
+	<string name="qna_twitter">준비중입니다..</string>
+	
+	<string name="qna_about_us">About Us..</string>
+	<string name="name_p">P (실론즈)</string>
+	<string name="desc_p"> - 갓수 <i>(스폰서, 현실 듀오 할 애인 구함)</i>\n
+	    - 국내 최대 게임 커뮤니티 <b>Dotax</b> 정회원 \n
+	    - Thanks to : K, 백민준, Dotax</string>
+	<string name="name_k">K (골레기)</string>
+	<string name="desc_k"> - 광고주 구함, <b>나 데려갈 회사도 구함</b>\n
+	    - <b>아 끝났다!!!</b>\n
+	    - 이제 뉴 베가스로 떠날거임, <i>스팀 만세!!</i>\n
+	    - Thanks to : SW 멤버쉽 5th, 부모님</string>
+	    
+	<string name="unranked_warning_title">혹시 언랭이신가요?</string>
+	<string name="unranked_warning">배치고사를 치루고 오시는것을 추천합니다!</string>
+	<string name="unranked_warning_check">다시 보지 않기</string>
+	<string name="unranked_warning_top">현재 내 정보 상태</string>
+	
+	<string name="async_login">로그인 중입니다 ..</string>
+
+    <string name="init_db_failed">DB초기화 실패!</string>
+	
+</resources>

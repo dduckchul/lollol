@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <ImageView android:id="@+id/image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/contentDesc"/>
+    
+    <LinearLayout android:id="@+id/vertical_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        		
+        <TextView android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="@string/test"
+            android:visibility="gone"/>
+        
+        <TextView android:id="@+id/tier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/test"
+            android:textStyle="bold"/>
+	    
+        <TextView android:id="@+id/division"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="@string/test"
+            android:textStyle="bold"/>
+	
+	</LinearLayout>
+	
+	<View android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+	
+    <LinearLayout android:id="@+id/vertical_linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+    
+	  	<TextView android:id="@+id/pos"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/test"
+	        android:gravity="center"
+	        android:textSize="15sp"
+	        android:textStyle="italic"/>
+	        
+	    <TextView android:id="@+id/summoner"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/test"
+	        android:textSize="20sp"/>
+    
+    </LinearLayout>
+    
+    <View android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <ImageButton android:id="@+id/infoBtn"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_gravity="center_vertical"
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:src="@drawable/ic_btn_info_small"
+	        android:contentDescription="@string/contentDesc"/>
+	    
+    <ImageButton android:id="@+id/breakDuoBtn"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_gravity="center_vertical"
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:src="@drawable/ic_btn_cancel"
+	        android:contentDescription="@string/contentDesc"/>
+    
+    <View android:layout_width="10dp"
+        android:layout_height="0dp"/>
+    
+</LinearLayout>

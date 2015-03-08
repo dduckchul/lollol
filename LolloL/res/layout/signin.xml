@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="20dp"
+	    android:padding="10dp"
+	    android:orientation="vertical" >
+	    
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+		
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginRight="10dp"
+			    android:textStyle="bold"
+			    android:text="@string/summoner_desc"/>
+			    
+			<TextView android:id="@+id/user_summonerName"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="@color/pointColor"
+			    android:textStyle="italic"/>
+		
+		</LinearLayout>
+		
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+			
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold" 
+                android:text="@string/position_desc"/>
+            
+            <TextView android:id="@+id/selected_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pointColor"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+        
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/introduce_input"/>
+            
+            <EditText android:id="@+id/introduce_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:maxLength="40"
+                android:hint="@string/introduce_input_hint"/>
+            
+        </LinearLayout>
+        
+		
+		<LinearLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="20dp"
+		    android:orientation="vertical"
+		    android:padding="5dp">
+	        
+		    <LinearLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		    
+		        <TextView android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginBottom="10dp"
+		            android:textStyle="bold"
+		            android:text="@string/position_layout_desc"/>
+		        
+		        <View android:layout_width="0dp"
+		            android:layout_height="0dp"
+		            android:layout_weight="1"/>
+		        
+		        <TextView android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/position_layou_warning"/>
+	        
+	        </LinearLayout>
+	
+	        <RelativeLayout android:id="@+id/posImages"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/shape_box"
+		        android:gravity="center">
+	        
+		        <ImageView android:id="@+id/pos_top"
+		            android:layout_width="130dp"
+		            android:layout_height="80dp"
+		            android:layout_marginTop="10dp"
+		            android:layout_marginRight="10dp"
+		            android:src="@drawable/character_shiv"
+		            android:contentDescription="@string/contentDesc"/>
+		       
+		        <ImageView android:id="@+id/pos_jungle"
+		            android:layout_width="130dp"
+		            android:layout_height="80dp"
+		            android:layout_marginTop="10dp"
+		            android:src="@drawable/character_leesin"
+		            android:layout_toRightOf="@id/pos_top"
+		            android:contentDescription="@string/contentDesc"/>
+		        
+		        <ImageView android:id="@+id/pos_mid"
+		            android:layout_width="130dp"
+		            android:layout_height="80dp"
+		            android:layout_marginRight="10dp"
+		            android:src="@drawable/character_orianna"
+		            android:layout_below="@id/pos_top"
+		            android:contentDescription="@string/contentDesc"/>
+		        
+		        <ImageView android:id="@+id/pos_ad"
+		            android:layout_width="130dp"
+		            android:layout_height="80dp"
+		            android:src="@drawable/character_graves"
+		            android:layout_below="@id/pos_jungle"
+		            android:layout_toRightOf="@id/pos_mid"
+		            android:contentDescription="@string/contentDesc"/>
+		
+		        <ImageView android:id="@+id/pos_support"
+		            android:layout_width="130dp"
+		            android:layout_height="80dp"
+		            android:layout_marginBottom="10dp"
+		            android:layout_marginRight="10dp"
+		            android:src="@drawable/character_blitz"
+		            android:layout_below="@id/pos_mid"
+		            android:contentDescription="@string/contentDesc"/>
+		
+		        <ImageView android:id="@+id/pos_all"
+		            android:layout_width="130dp"
+		            android:layout_height="80dp"
+		            android:layout_marginBottom="10dp"
+		            android:src="@drawable/character_teemo"
+		            android:layout_below="@id/pos_ad"
+		            android:layout_toRightOf="@id/pos_support"
+		            android:contentDescription="@string/contentDesc"/>
+		        
+		    </RelativeLayout>
+					
+		</LinearLayout>
+		
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal"
+		    android:layout_marginBottom="5dp"
+		    android:text="@string/verify_warning"
+		    android:textStyle="bold"
+		    android:textColor="@color/tabBackground"
+		    android:textSize="12sp"/>
+		
+		<Button android:id="@+id/user_signInBtn"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="10dp"
+		    android:background="@drawable/shape_button"
+		    android:text="@string/signInBtn"
+		    android:textSize="30sp"
+		    android:textColor="@android:color/background_light"
+		    style="?android:attr/buttonBarButtonStyle"/>
+		
+		<Button android:id="@+id/user_backToMainBtn"
+		    android:layout_width="match_parent"
+		    android:layout_height="30dp"
+		    android:layout_gravity="bottom"
+		    android:background="@drawable/shape_button_cancel"
+		    android:text="@string/backToMainBtn"
+		    android:textSize="15sp"
+		    android:textColor="@android:color/background_light"
+		    style="?android:attr/buttonBarButtonStyle"/>
+		
+	</LinearLayout>
+
+</ScrollView>

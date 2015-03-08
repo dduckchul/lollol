@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/my_account_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+    
+    <LinearLayout android:id="@+id/my_account_buttons_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        
+        <View android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        
+	    <ImageButton android:id="@+id/modify_btn"
+	        android:layout_width="36dp"
+	        android:layout_height="36dp"
+	        android:contentDescription="@string/contentDesc"
+	        android:background="@drawable/ic_btn_modify"
+	        style="?android:attr/buttonBarButtonStyle"/>
+	    
+		<ImageButton android:id="@+id/logoutBtn"
+	        android:layout_width="36dp"
+	        android:layout_height="36dp"
+	        android:contentDescription="@string/contentDesc"
+	        android:background="@drawable/ic_btn_logout"
+	        style="?android:attr/buttonBarButtonStyle"/>
+	        
+	</LinearLayout>
+	
+    <LinearLayout android:id="@+id/modify_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+		
+        <View android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        
+		<ImageButton android:id="@+id/modify_updateBtn"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/contentDesc"
+            android:background="@drawable/ic_btn_confirm"
+            style="?android:attr/buttonBarButtonStyle"/>
+		
+        <ImageButton android:id="@+id/modify_cancleBtn"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/contentDesc"
+            android:background="@drawable/ic_btn_back"
+            style="?android:attr/buttonBarButtonStyle"/>
+        
+	</LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+   
+	    <TextView android:id="@+id/num"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textSize="12sp"
+	        android:visibility="gone"/>
+	        
+	    <TextView android:id="@+id/my_pos"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="10dp"
+	        android:textSize="20sp"
+	        android:textStyle="italic"/>
+	    
+	   	<LinearLayout android:id="@+id/modify_position_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="center"
+		    android:visibility="gone">
+		
+			<LinearLayout android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:gravity="center">
+			    
+			    <TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/checkbox_top"
+				    android:textSize="12sp"/>
+			    
+			    <CheckBox android:id="@+id/user_position_top"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"/>
+			    
+			</LinearLayout>
+			
+			<LinearLayout android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+	   		    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:gravity="center">
+			    
+			    <TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/checkbox_jungle"
+				    android:textSize="12sp"/>
+			    
+			    <CheckBox android:id="@+id/user_position_jungle"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"/>
+			    
+			</LinearLayout>
+			
+			<LinearLayout android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+	   		    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:gravity="center">
+			    		    
+			    <TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/checkbox_mid"
+				    android:textSize="12sp"/>
+			    		    
+	    		<CheckBox android:id="@+id/user_position_mid"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"/>
+			    
+			</LinearLayout>
+	
+			<LinearLayout android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+	   		    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:gravity="center">
+	
+			    <TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/checkbox_ad"
+				    android:textSize="12sp"/>
+			    		    
+			    <CheckBox android:id="@+id/user_position_ad"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"/>
+			    
+			</LinearLayout>
+	
+			<LinearLayout android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+	   		    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:gravity="center">
+	
+			    <TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/checkbox_support"
+				    android:textSize="12sp"/>		    
+			    
+			    <CheckBox android:id="@+id/user_position_support"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"/>
+			    
+			</LinearLayout>
+			
+			<LinearLayout android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+	   		    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:gravity="center">
+			    
+			   	<TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/checkbox_allRounder"
+				    android:textSize="12sp"/>
+			    
+			    <CheckBox android:id="@+id/user_position_allRounder"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"/>
+			    
+			</LinearLayout>
+					
+		</LinearLayout>
+	    
+	    <ImageView android:id="@+id/tier"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:contentDescription="@string/contentDesc"/>
+	    
+	    <TextView android:id="@+id/division"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_gravity="center"
+	        android:textSize="20sp"
+	        android:textStyle="bold"/>
+	    
+	    <TextView android:id="@+id/summoner"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textSize="20sp"/>
+	    
+	    <LinearLayout android:id="@+id/introduce_layout"
+	        android:layout_width="300dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="20dp"
+	        android:orientation="vertical"
+	        android:padding="10dp"
+	        android:background="@drawable/shape_box">
+	        
+	        <TextView android:id="@+id/introduce_header"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:text="@string/introduce_header"
+	            android:textStyle="bold"/>
+	    
+		    <TextView android:id="@+id/introduce"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="15sp"/>
+	    
+	    </LinearLayout>
+	    
+	    <LinearLayout android:id="@+id/rank_stats_layout"
+	        android:layout_width="300dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="20dp"
+	        android:padding="10dp"
+	        android:orientation="vertical"
+	        android:background="@drawable/shape_box">
+		    
+	        <TextView android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:text="@string/rank_stats_txt"
+	            android:textStyle="bold"/>
+	
+		    <ListView android:id="@+id/rank_stats"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:divider="@null"
+		        android:dividerHeight="10dp"
+		    	android:textSize="15sp"/>
+		    
+	    </LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

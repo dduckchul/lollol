@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical">
+    
+	<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingRight="10dp"
+        android:textStyle="italic"
+        android:textColor="@color/pointColor"
+        android:text="@string/app_version"/>
+    
+    <ImageView android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_lollol_big"
+        android:contentDescription="@string/contentDesc"/>
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:textColor="@color/pointColor"
+        android:paddingBottom="10dp"
+        android:text="@string/app_name"/>
+    
+    <RelativeLayout android:id="@+id/login_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+ 
+        <CheckBox android:id="@+id/login_info_chkbox"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:textStyle="bold"
+		    android:text="@string/login_info_chkbox"
+		    android:textSize="12sp"/>
+        
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignBaseline="@id/login_info_chkbox"
+			android:textStyle="bold"
+			android:textColor="@color/pointColorDarker"
+			android:text="@string/login_layout_desc"/>
+		
+	</RelativeLayout>
+		
+	<LinearLayout android:id="@+id/login_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="@drawable/shape_box_blue"
+		android:padding="10dp">
+		
+        <LinearLayout android:id="@+id/login_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:orientation="horizontal">
+            
+	        <LinearLayout android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.8"
+	            android:orientation="vertical">            
+	
+				<EditText android:id="@+id/user_lolid"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="text"
+				    android:hint="@string/hint_InputId"
+				    style="@style/CustomEditTextTop"/>
+				
+				<EditText android:id="@+id/user_lolpw"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="textPassword"
+				    android:hint="@string/hint_InputPW"
+				    style="@style/CustomEditTextBottom"/>
+				
+				</LinearLayout>
+				
+			<ImageButton android:id="@+id/user_verifyBtn"
+			    android:layout_width="0dp"
+			    android:layout_height="match_parent"
+			    android:layout_weight="0.2"
+			    android:layout_gravity="center_horizontal"
+			    android:padding="5dp"
+			    android:background="@drawable/ic_btn_login"
+			    android:contentDescription="@string/contentDesc"
+			    style="?android:attr/buttonBarButtonStyle"/>
+		
+		</LinearLayout>
+		
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="italic"
+			android:textSize="12sp"
+			android:textColor="@color/gray"
+            android:text="@string/login_layout_user_logininfo"/>
+		
+	</LinearLayout>
+    
+</LinearLayout>
